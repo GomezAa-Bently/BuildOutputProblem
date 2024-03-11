@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>8880e62a-4025-4d68-a96a-00282fde9d6f</ProjectGuid>
+    <TargetFramework>net48</TargetFramework>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <LangVersion>latest</LangVersion>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <UseCommonOutputDirectory>true</UseCommonOutputDirectory>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>  
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\bin\plugins\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\bin\plugins\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SharedLibrary\SharedLibrary.csproj">
+      <CopyLocal>False</CopyLocal>
+    </ProjectReference>
+  </ItemGroup>
+ </Project>

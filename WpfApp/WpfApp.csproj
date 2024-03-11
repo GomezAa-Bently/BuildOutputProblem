@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{9E4433AB-6B2F-47C0-B83C-98B900898105}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <UseWPF>true</UseWPF>
+    <LangVersion>latest</LangVersion>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <UseCommonOutputDirectory>true</UseCommonOutputDirectory>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\bin\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\bin\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SharedLibrary\SharedLibrary.csproj">
+      <CopyLocal>false</CopyLocal>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

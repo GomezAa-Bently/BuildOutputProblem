@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>b3e5a23a-249d-4b76-8936-141fd0ba18f3</ProjectGuid>
+    <TargetFramework>net48</TargetFramework>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <LangVersion>latest</LangVersion>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <UseCommonOutputDirectory>true</UseCommonOutputDirectory>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\bin\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\bin\</OutputPath>
+  </PropertyGroup>
+ </Project>
